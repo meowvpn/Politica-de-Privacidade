@@ -1,74 +1,166 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html><html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - VPN/SSH App</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
+    <title>Política de Privacidade</title><!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --bg-main: #0b0f1a;
+        --bg-card: #111827;
+        --neon-purple: #8b5cf6;
+        --neon-cyan: #22d3ee;
+        --text-main: #e5e7eb;
+        --text-muted: #9ca3af;
+        --danger: #f87171;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Inter', sans-serif;
+        background: radial-gradient(circle at top, #111827, var(--bg-main));
+        color: var(--text-main);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 900px;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(17,24,39,0.95), rgba(2,6,23,0.95));
+        border-radius: 18px;
+        padding: 40px 45px;
+        box-shadow:
+            0 0 40px rgba(139,92,246,0.15),
+            inset 0 0 0 1px rgba(139,92,246,0.15);
+        backdrop-filter: blur(8px);
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    header h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.2rem;
+        color: var(--neon-purple);
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    header span {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+    }
+
+    h2 {
+        margin-top: 35px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.2rem;
+        color: var(--neon-cyan);
+        border-left: 4px solid var(--neon-cyan);
+        padding-left: 12px;
+    }
+
+    p {
+        margin-top: 12px;
+        line-height: 1.7;
+        color: var(--text-main);
+    }
+
+    ul {
+        margin-top: 10px;
+        padding-left: 22px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        color: var(--text-muted);
+    }
+
+    .highlight {
+        color: var(--danger);
+        font-weight: 600;
+    }
+
+    .badge {
+        display: inline-block;
+        background: rgba(34,211,238,0.15);
+        color: var(--neon-cyan);
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        margin-top: 10px;
+    }
+
+    footer {
+        margin-top: 45px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(139,92,246,0.2);
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+    }
+
+    footer strong {
+        color: var(--neon-purple);
+    }
+
+    @media (max-width: 600px) {
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: #1e1e1e;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            padding: 30px 22px;
         }
-        h1 { color: #bb86fc; border-bottom: 2px solid #333; padding-bottom: 10px; }
-        h2 { color: #03dac6; margin-top: 30px; }
-        p { margin-bottom: 15px; }
-        .highlight { color: #cf6679; font-weight: bold; }
-        footer {
-            margin-top: 40px;
-            font-size: 0.8em;
-            text-align: center;
-            color: #777;
+
+        header h1 {
+            font-size: 1.7rem;
         }
-    </style>
+    }
+</style>
+
 </head>
-<body>
+<body><div class="container">
+    <header>
+        <h1>Política de Privacidade</h1>
+        <span>Última atualização: 11 de Fevereiro de 2026</span><br>
+        <span class="badge">• No-Logs</span>
+    </header><p>Nossa missão é fornecer uma experiência de navegação segura, privada e confiável. Esta Política de Privacidade descreve como nossos aplicativos de <strong> VPN</strong> trata suas informações.</p>
 
-<div class="container">
-    <h1>Política de Privacidade</h1>
-    <p>Última atualização: 11 de Fevereiro de 2026</p>
+<h2>1. Coleta de Dados</h2>
+<p>Nossos apps adotam uma política rigorosa de <span class="highlight">Não Registro (No-Logs)</span>:</p>
+<ul>
+    <li>Não coletamos seu endereço IP real.</li>
+    <li>Não monitoramos o conteúdo do tráfego, aplicativos ou sites acessados.</li>
+    <li>Não armazenamos registros de conexão, horários ou duração das sessões.</li>
+</ul>
 
-    <p>Nossa missão é fornecer segurança e privacidade. Esta política descreve como nosso aplicativo de VPN/SSH lida com suas informações.</p>
+<h2>2. Permissões do Aplicativo</h2>
+<p>Nossos aplicativos utilizam exclusivamente a permissão de <strong>Serviço de VPN do Android</strong>, necessária para estabelecer o túnel criptografado entre o seu dispositivo e nossos servidores.</p>
 
-    <h2>1. Coleta de Dados</h2>
-    <p>Para garantir sua privacidade, operamos sob uma política de <span class="highlight">Não Monitoramento (No-Logs)</span>:</p>
-    <ul>
-        <li><strong>Não coletamos</strong> seu endereço IP original.</li>
-        <li><strong>Não monitoramos</strong> o conteúdo do seu tráfego ou sites visitados.</li>
-        <li><strong>Não armazenamos</strong> registros de conexão ou carimbos de data/hora.</li>
-    </ul>
+<h2>3. Segurança da Informação</h2>
+<p>Empregamos tecnologias modernas de criptografia, incluindo <strong>AES-256</strong> e <strong>SSHv2</strong>, para proteger seus dados contra interceptação, espionagem ou acesso não autorizado.</p>
 
-    <h2>2. Permissões Necessárias</h2>
-    <p>O aplicativo solicita acesso ao <strong>Serviço de VPN do Android</strong> para criar um túnel seguro. Sem essa permissão, a função principal do app não pode ser executada.</p>
+<h2>4. Serviços de Terceiros</h2>
+<p>Podemos utilizar serviços de análise (como Firebase Analytics) apenas para coletar informações técnicas anônimas, como modelo do dispositivo e versão do sistema operacional, com o objetivo exclusivo de melhorar desempenho e estabilidade.</p>
 
-    <h2>3. Segurança da Informação</h2>
-    <p>Utilizamos protocolos de criptografia de ponta (como AES-256 e SSHv2) para garantir que seus dados permaneçam privados enquanto transitam entre seu dispositivo e o servidor de destino.</p>
+<h2>5. Alterações nesta Política</h2>
+<p>Esta Política de Privacidade pode ser atualizada periodicamente. Recomendamos a revisão regular deste documento para se manter informado sobre eventuais mudanças.</p>
 
-    <h2>4. Serviços de Terceiros</h2>
-    <p>Podemos utilizar SDKs de análise (como Firebase) para coletar dados técnicos anônimos (modelo do aparelho, versão do Android) com o único objetivo de corrigir bugs e melhorar a estabilidade do serviço.</p>
+<h2>6. Contato</h2>
+<p>Em caso de dúvidas ou solicitações relacionadas à privacidade, entre em contato pelo e-mail:<br>
+<strong>meowvpnoficial@gmail.com</strong></p>
 
-    <h2>5. Alterações nesta Política</h2>
-    <p>Podemos atualizar nossa Política de Privacidade periodicamente. Recomendamos que você revise esta página de tempos em tempos para quaisquer alterações.</p>
+<footer>
+    &copy; 2026 <strong>Meow</strong> • Todos os direitos reservados
+</footer>
 
-    <h2>6. Contato</h2>
-    <p>Se você tiver dúvidas sobre nossa Política de Privacidade, entre em contato conosco em: <br>
-    <strong>meowvpnoficial@gmail.com</strong></p>
-
-    <footer>
-        &copy; 2026 Meow - Todos os direitos reservados.
-    </footer>
-</div>
-
-</body>
-</html>
+</div></body>
+    </html>
